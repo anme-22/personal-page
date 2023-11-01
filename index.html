@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="component.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -25,56 +26,110 @@
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
           <div class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </div>
         </ul>
       </nav>
     </header>
-    <section class="mainSection">
-      <h1>Anme22</h1>
-      <p class="sectionParagraph">
-        I am Angel Mendez, a software developer from Honduras. I enjoy the
-        flexibility of remote work and have a strong passion for software
-        development. I am constantly seeking to learn and apply new technologies
-        to create innovative and efficient solutions.
-      </p>
-      <p class="sectionParagraph">
-        I possess a diverse skill set ranging from building websites using HTML,
-        CSS, and Javascript to creating and implementing dynamic components in
-        React JS.
-      </p>
-      <img src="ayo.jpg" alt="" />
-      <div class="socialPlataformWrap">
-        <div class="socialPlataform">
-          <a
-            href="https://www.linkedin.com/in/angel-mendez-150991246/"
-            target="_blank"
-            referrerpolicy="no-referrer"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </div>
-        <div class="socialPlataform">
-          <a
-            href="https://github.com/anme-22"
-            target="_blank"
-            referrerpolicy="no-referrer"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-        <div class="socialPlataform">
-          <a
-            href="https://www.instagram.com/anme22/"
-            target="_blank"
-            referrerpolicy="no-referrer"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+    <section class="mainSection" id="home">
+      <div class="row">
+        <h1>Anme22</h1>
+      </div>
+      <div class="row">
+        <p class="sectionParagraph">
+          I am Angel Mendez, a software developer from Honduras. I enjoy the
+          flexibility of remote work and have a strong passion for software
+          development. I am constantly seeking to learn and apply new
+          technologies to create innovative and efficient solutions.
+        </p>
+      </div>
+      <div class="row">
+        <p class="sectionParagraph">
+          I possess a diverse skill set ranging from building websites using
+          HTML, CSS, and Javascript to creating and implementing dynamic
+          components in React JS.
+        </p>
+      </div>
+      <div class="row">
+        <img src="ayo.jpg" alt="" />
+      </div>
+      <div class="row">
+        <div class="socialPlataformWrap">
+          <div class="socialPlataform">
+            <a
+              href="https://www.linkedin.com/in/angel-mendez-150991246/"
+              target="_blank"
+              referrerpolicy="no-referrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="socialPlataform">
+            <a
+              href="https://github.com/anme-22"
+              target="_blank"
+              referrerpolicy="no-referrer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="socialPlataform">
+            <a
+              href="https://www.instagram.com/anme22/"
+              target="_blank"
+              referrerpolicy="no-referrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div><span>footer</span></div>
-    </footer>
+    <section class="aboutMeSection" id="about">
+      <div class="row"><h1>About Me</h1></div>
+      <div class="row">
+        <h2>Who I am?</h2>
+      </div>
+      <div class="row">
+        <div class="personalImage">
+          <img src="aboutMe.jpg" alt="angel" width="300px" />
+        </div>
+        <div class="personalInfo">
+          <p>
+            Hello, I'm Angel Mendez. I studied Systems Engineering at the
+            Catholic University of Honduras. I am a passionate individual with a
+            keen interest in sports, particularly soccer and boxing. Alongside
+            my sporting pursuits, I have developed a profound fascination for
+            books on critical thinking and history. This combination of
+            technical knowledge and a love for intellectual exploration has
+            shaped my perspective on problem-solving and holistic understanding.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>My Experience</h2>
+      </div>
+      <div class="row">
+        <div class="jobExperience">
+          <p>
+            I have garnered two years of hands-on experience in web development,
+            fostering a strong foundation in HTML, CSS, and JavaScript. My
+            professional journey includes significant contributions to the
+            development of Recontent, a Software-as-a-Service (SaaS) application
+            that utilizes a technology stack comprising React JS, Remix,
+            Firebase, and Tailwind CSS. Additionally, I spearheaded the entire
+            development process of 'The Signature App' during my tenure at
+            Sommerdahl Adventures, where I employed React, Typescript, and
+            Tailwind CSS. These experiences have not only refined my technical
+            skills but have also instilled in me a profound understanding of
+            collaborative development and the intricacies of creating
+            user-centric solutions.
+          </p>
+        </div>
+        <div class="jobImage">
+          <img src="codingImage.jpg" alt="coding" />
+        </div>
+      </div>
+    </section>
+    <section id="contact"></section>
   </body>
 </html>

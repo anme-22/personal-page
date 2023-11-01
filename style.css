@@ -70,10 +70,12 @@ input[type="checkbox"] {
   /* background-image: url("bg.jpg"); */
 
   height: 100%;
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .mainSection h1 {
@@ -133,6 +135,66 @@ input[type="checkbox"] {
   opacity: 1;
   box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
 }
+.aboutMeSection {
+  display: flex;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  height: 1080px;
+  width: 100%;
+}
+.aboutMeSection h1 {
+  font-size: 40px;
+}
+.aboutMeSection h2 {
+  font-size: 35px;
+}
+
+.aboutMeSection .row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 5px;
+  height: 35%;
+}
+.aboutMeSection .row h1 h2 {
+  height: 10%;
+}
+.personalImage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.personalImage img {
+  width: 90%;
+  height: 90%;
+  border: #00adb5 solid 5px;
+}
+.personalInfo {
+  width: 50%;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.jobExperience {
+  width: 50%;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.jobImage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+.jobImage img {
+  width: 90%;
+  border: #00adb5 solid 5px;
+}
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   body {
@@ -170,14 +232,16 @@ input[type="checkbox"] {
   }
   .mainSection {
     /* background-image: url("bg.jpg"); */
-    width: 90%;
+    width: 100%;
     height: 100%;
     color: white;
     display: flex;
+  }
+
+  .mainSection .row {
     flex-direction: column;
     align-items: center;
   }
-
   .mainSection h1 {
     padding: 10px;
     font-size: 30px;

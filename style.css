@@ -45,7 +45,7 @@ li {
 
 .menu li:hover {
   transition: 0.3s ease;
-  border-bottom: solid 1px #005b41;
+  border-bottom: solid 1px #00adb5;
   border-radius: 1px;
 }
 
@@ -167,8 +167,8 @@ input[type="checkbox"] {
   width: 50%;
 }
 .personalImage img {
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 80%;
   border: #00adb5 solid 5px;
 }
 .personalInfo {
@@ -191,14 +191,58 @@ input[type="checkbox"] {
   padding: 20px;
 }
 .jobImage img {
-  width: 90%;
+  width: 70%;
+  background-size: cover;
   border: #00adb5 solid 5px;
+}
+#contact .row {
+  font-size: 35px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
+  height: 35%;
+}
+.form form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.form .feedbackInput {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #00adb5;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #00adb5;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
 }
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   body {
-    overflow-y: hidden;
     overflow-x: hidden;
   }
 
@@ -298,5 +342,106 @@ input[type="checkbox"] {
     filter: blur(0px);
     opacity: 1;
     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  }
+  .aboutMeSection h1 {
+    font-size: 30px;
+    font-weight: 1200;
+  }
+  .aboutMeSection h2 {
+    font-size: 25px;
+  }
+
+  .aboutMeSection .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  .aboutMeSection .row h1 h2 {
+    height: 2%;
+  }
+  .personalImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .personalImage img {
+    width: 80%;
+    border: #00adb5 solid 5px;
+  }
+  .personalInfo {
+    padding: 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .jobExperience {
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .jobImage {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+  .jobImage img {
+    width: 80%;
+    background-size: cover;
+    border: #00adb5 solid 5px;
+  }
+  #contact .row {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    height: 35%;
+  }
+
+  .row h1 {
+    font-size: 30px;
+  }
+  .form form {
+    max-width: 80%;
+    margin: 50px auto;
+  }
+
+  .form .feedbackInput {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #00adb5;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    background: #00adb5;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 400;
   }
 }

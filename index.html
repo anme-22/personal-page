@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="component.css" />
+    <link rel="stylesheet" href="./stylesheets/navbar.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,9 +26,9 @@
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
           <div class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/aboutMe.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </div>
         </ul>
       </nav>
@@ -53,7 +53,7 @@
         </p>
       </div>
       <div class="row">
-        <img src="ayo.jpg" alt="" />
+        <img src="/assets/ayo.jpg" alt="" />
       </div>
       <div class="row">
         <div class="socialPlataformWrap">
@@ -82,72 +82,6 @@
             ></a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="aboutMeSection" id="about">
-      <div class="row"><h1>About Me</h1></div>
-      <div class="row">
-        <h2>Who I am?</h2>
-      </div>
-      <div class="row">
-        <div class="personalImage">
-          <img src="aboutMe.jpg" alt="angel" width="300px" />
-        </div>
-        <div class="personalInfo">
-          <p>
-            I'm Angel Mendez, a Systems Engineering graduate from the Catholic
-            University of Honduras. I'm passionate about soccer and boxing and
-            have a deep interest in books on critical thinking and history. This
-            blend of technical expertise and intellectual curiosity has
-            influenced my problem-solving approach and holistic outlook.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <h2>My Experience</h2>
-      </div>
-      <div class="row">
-        <div class="jobExperience">
-          <p>
-            Experienced in web development for two years, proficient in HTML,
-            CSS, and JavaScript. Played a key role in building Recontent, a SaaS
-            application using React JS, Remix, Firebase, and Tailwind CSS. Led
-            the development of 'The Signature App' at Sommerdahl Adventures
-            using React, Typescript, and Tailwind CSS, enhancing collaborative
-            skills and user-centric approach.
-          </p>
-        </div>
-        <div class="jobImage">
-          <img src="codingImage.jpg" alt="coding" />
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="row"><h1>Contact me</h1></div>
-      <div class="form">
-        <form action="submit">
-          <input
-            name="name"
-            type="text"
-            placeholder="Name"
-            class="feedbackInput"
-          />
-          <input
-            name="email"
-            type="text"
-            placeholder="Email"
-            class="feedbackInput"
-          />
-          <textarea
-            name="text"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Comment"
-            class="feedbackInput"
-          ></textarea>
-          <input type="submit" value="SUBMIT" />
-        </form>
       </div>
     </section>
   </body>

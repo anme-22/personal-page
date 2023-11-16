@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.mainSection {
+  /* background-image: url("bg.jpg"); */
+
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainSection h1 {
+  padding: 10px;
+  font-size: 70px;
+  width: 500px;
+  text-align: center;
+  flex-direction: row;
+}
+.mainSection p {
+  font-size: 28px;
+  padding: 10px;
+  margin: 10px;
+  width: 800px;
+}
+
+.mainSection img {
+  margin: 10px 0;
+  border-radius: 50%;
+  width: 200px;
+}
+.socialPlataformWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+
+.socialPlataform i {
+  font-size: 35px;
+  color: white;
+}
+
+.socialPlataform {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  width: 30%;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: 0.2s all;
+}
+
+.socialPlataform a:active {
+  color: #00adb5;
+}
+.socialPlataformWrap:hover .socialPlataform {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.socialPlataformWrap:hover .socialPlataform:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .mainSection {
+    /* background-image: url("bg.jpg"); */
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+  }
+
+  .mainSection .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainSection h1 {
+    padding: 10px;
+    font-size: 30px;
+    width: 310px;
+    text-align: center;
+    flex-direction: row;
+  }
+  .mainSection p {
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 310px;
+  }
+
+  .mainSection img {
+    margin: 10px 0;
+    border-radius: 50%;
+    width: 100px;
+  }
+  .socialPlataformWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+  }
+
+  .socialPlataform i {
+    font-size: 30px;
+    color: white;
+  }
+
+  .socialPlataform {
+    padding: 30px;
+    margin: 2%;
+    width: 100px;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.2s all;
+  }
+
+  .socialPlataform a:active {
+    color: #00adb5;
+  }
+  .socialPlataformWrap:hover .socialPlataform {
+    filter: blur(3px);
+    opacity: 0.5;
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+
+  .socialPlataformWrap:hover .socialPlataform:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  }
+}

@@ -25,30 +25,52 @@
     <section id="contact">
       <div class="row"><h1>Contact me</h1></div>
       <div class="form">
-        <form action="submit">
+        <form
+          action="https://formsubmit.co/angeldavidmendez22@gmail.com.com"
+          method="post"
+        >
           <input
-            name="name"
+            id="name"
             type="text"
             placeholder="Name"
             class="feedbackInput"
+            required
           />
           <input
-            name="email"
+            id="email"
             type="text"
             placeholder="Email"
             class="feedbackInput"
+            required
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Message from contact form"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/index.html"
           />
           <textarea
             name="text"
-            id=""
+            id="message"
             cols="30"
             rows="10"
             placeholder="Comment"
             class="feedbackInput"
+            required
           ></textarea>
-          <input type="submit" value="SUBMIT" />
+          <button type="submit">SEND</button>
         </form>
       </div>
     </section>
+    <footer>
+      <div class="footer">
+        &copy;<span id="year"> </span
+        ><span> Angel Mendez. All rights reserved.</span>
+      </div>
+    </footer>
   </body>
 </html>

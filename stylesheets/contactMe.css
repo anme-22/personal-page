@@ -54,6 +54,20 @@ body {
   margin-top: -4px;
   font-weight: 700;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  width: 100%;
+  height: 100px;
+  margin-top: 175px;
+}
+
+footer span {
+  font-weight: 500;
+  color: #00adb5;
+}
 
 @media (max-width: 768px) {
   #contact .row {
@@ -102,5 +116,9 @@ body {
     transition: all 0.3s;
     margin-top: -4px;
     font-weight: 400;
+  }
+  footer {
+    margin-top: 185px;
+    height: 100px;
   }
 }
